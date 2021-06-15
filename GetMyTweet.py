@@ -22,10 +22,10 @@ def gettweet(CK, CKS, AT, ATS):
     api = tweepy.API(auth)
 
     # ユーザを指定してRTを除いたツイートを取得
-    name="@yamath_314"
+    name = info['TwitterName']
     results=api.user_timeline(screen_name=name,count=50,include_rts=False)
 
-    f=open(r"/Users/ryodai/Documents/MyPython/twitter_bot/data.txt",mode="a",encoding="utf-8")
+    f=open(r"data.txt",mode="a",encoding="utf-8")
 
     for result in results:
 

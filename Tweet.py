@@ -24,7 +24,7 @@ def job():
     req = twitter.post("https://api.twitter.com/1.1/statuses/update.json", params = params)
 
 
-    f=open(r"/Users/ryodai/Documents/MyPython/twitter_bot/data.txt",mode="a",encoding="utf-8")
+    f=open(r"data.txt",mode="a",encoding="utf-8")
     #data.txtに追加で書き込み
     f.write(tweet+"\n")
     f.close()
@@ -38,7 +38,7 @@ def main():
         time.sleep(1)
 
 if __name__ == '__main__':
-    main()
+    job()
 
 
 """ if req.status_code == 200:

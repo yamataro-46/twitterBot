@@ -12,8 +12,8 @@ class PrepareChain(object):
     BEGIN = u"__BEGIN_SENTENCE__"
     END = u"__END_SENTENCE__"
 
-    DB_PATH = "/Users/ryodai/Documents/MyPython/twitter_bot/chain.db"
-    DB_SCHEMA_PATH = "/Users/ryodai/Documents/MyPython/twitter_bot/schema.sql"
+    DB_PATH = "chain.db"
+    DB_SCHEMA_PATH = "schema.sql"
 
 
     #初期メソッド
@@ -133,7 +133,7 @@ class PrepareChain(object):
 
 
 if __name__ == "__main__":
-    f = open("/Users/ryodai/Documents/MyPython/twitter_bot/data.txt", encoding="utf-8")
+    f = open("data.txt", encoding="utf-8")
     text = f.read()
     f.close()
     chain = PrepareChain(text)
